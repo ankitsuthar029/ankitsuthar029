@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">ANKIT SUTHAR</div>
+                </div>
+              
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="ank.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input"> a SOCIAL INFULNCER</span></h5>
+                    <h1>ANKIT SUTHAR</h1>
+                    
+                    
+
+                    <div class="btn-group">
+                       <a href="#" class="btn active">ANKIT </a>
+                       <a href="#" class="btn">SUTHAR</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100081025391460&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+
+                        <a href="https://www.instagram.com/ankit_suthar_officel16_/profilecard/?igsh=MXAxenM4Y2FobHhhOA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.snapchat.com/add/ankitsuthar016?share_id=vnppz5-vOOc&locale=en-IN"><i class="fa-brands fa-snapchat"></i></a>
+                   <a href="https://x.com/AnkitSuthar016?t=NaL0V3wrewpBfxDJd6uCTw&s=09"><i class="fa-brands fa-twitter"></i></a>
+                   <a href="tel:+91 97996 88629"> <i class="fa-duotone fa-solid fa-phone"></i></i>   </a>
+
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","web Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>''
